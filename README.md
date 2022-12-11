@@ -1,4 +1,4 @@
-# Heroes App
+# Journal APP
 
 Frontend de una APP orientada a un diario de vida
 
