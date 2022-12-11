@@ -6,4 +6,5 @@ Frontend de una APP orientada a un diario de vida
 
 - React 18.2
 - Material UI
+- Redux
 - Vite
