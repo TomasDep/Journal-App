@@ -8,3 +8,4 @@ Frontend de una APP orientada a un diario de vida
 - Material UI
 - Redux
 - Vite
+- Firebase
