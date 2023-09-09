@@ -20,7 +20,7 @@ const AUTH_STATUS: { [index: string]: string } = {
 };
 
 const initialState: IAuthState = {
-  status: AUTH_STATUS["NOT_AUTHENTICATED"],
+  status: AUTH_STATUS["CHECKING"],
   message: "",
   user: {
     uid: "",
