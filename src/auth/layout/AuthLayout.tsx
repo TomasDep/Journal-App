@@ -1,12 +1,13 @@
+import { FC } from "react";
+
 import { Grid, Typography } from "@mui/material";
 
-export const AuthLayout = ({
-  children,
-  title,
-}: {
+interface Props {
   children: any;
   title: string;
-}) => {
+}
+
+export const AuthLayout: FC<Props> = ({ children, title }) => {
   return (
     <Grid
       container

@@ -1,3 +1,6 @@
+import { FC } from "react";
+import { useSelector } from "react-redux";
+
 import {
   Divider,
   Drawer,
@@ -13,7 +16,12 @@ import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import { TurnedInNot } from "@mui/icons-material";
 
-export const Sidebar = ({ drawerWidth }: { drawerWidth: number }) => {
+interface Props {
+  drawerWidth?: number;
+}
+
+export const Sidebar: FC<Props> = ({ drawerWidth }) => {
+  const { user } = useSelector((state: any) => state.auth);
   const width = drawerWidth ? drawerWidth : 240;
   return (
     <Box component="nav" sx={{ width: { sm: width }, flexShrink: { sm: 0 } }}>
@@ -27,7 +35,7 @@ export const Sidebar = ({ drawerWidth }: { drawerWidth: number }) => {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-            John Doe
+            {user.displayName}
           </Typography>
         </Toolbar>
         <Divider />
