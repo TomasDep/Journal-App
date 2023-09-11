@@ -9,3 +9,4 @@ Frontend de una APP orientada a un diario de vida
 - Redux
 - Vite
 - Firebase
+- Cloudinary
